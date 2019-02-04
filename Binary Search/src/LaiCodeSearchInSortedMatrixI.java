@@ -1,3 +1,5 @@
+//Time: O(log n)
+//Space: O(1)
 public class LaiCodeSearchInSortedMatrixI {
     //Method 1 find row first then find col.
     public class Solution {

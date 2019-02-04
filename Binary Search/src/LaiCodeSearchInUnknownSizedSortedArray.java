@@ -5,6 +5,8 @@ public class LaiCodeSearchInUnknownSizedSortedArray {
 
     // You do not need to implement the Dictionary interface.
     // You can use it directly, the implementation is provided when testing your solution.
+    //Time: O(log n)
+    //Space: O(1)
     public class Solution {
         public int search(Dictionary dict, int target) {
             // Write your solution here

@@ -1,3 +1,5 @@
+//Time: O(log n)
+//Space: O(1)
 public class LaiCodeLastOccurrence {
     public class Solution {
         public int lastOccur(int[] array, int target) {

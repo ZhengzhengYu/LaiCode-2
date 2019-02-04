@@ -1,3 +1,5 @@
+//Time: O(log n)
+//Space: O(1)
 public class LaiCodeClassicalBinarySearch {
     public class Solution {
         public int binarySearch(int[] array, int target) {

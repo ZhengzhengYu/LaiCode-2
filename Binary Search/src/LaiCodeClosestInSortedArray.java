@@ -1,3 +1,5 @@
+//Time: O(log n)
+//Space: O(1)
 public class LaiCodeClosestInSortedArray {
     public class Solution {
         public int closest(int[] array, int target) {

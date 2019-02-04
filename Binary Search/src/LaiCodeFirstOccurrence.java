@@ -1,3 +1,5 @@
+//Time: O(log n)
+//Space: O(1)
 public class LaiCodeFirstOccurrence {
     public class Solution {
         public int firstOccur(int[] array, int target) {
