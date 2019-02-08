@@ -1,7 +1,7 @@
-//Time: O(log n)
+//Method 1 find row first then find col.
+//Time: O(log m + log n) = O(log m*n)
 //Space: O(1)
 public class LaiCodeSearchInSortedMatrixI {
-    //Method 1 find row first then find col.
     public class Solution {
         public int[] search(int[][] matrix, int target) {
             // Write your solution here
@@ -126,6 +126,8 @@ public class LaiCodeSearchInSortedMatrixI {
 
 
 //Method 2 convert the 2D array to 1D array and do binary search
+//Time: O(log m + log n) = O(log m*n)
+//Space: O(1)
 //    public class Solution {
 //      public int[] search(int[][] matrix, int target) {
 //        // Write your solution here
