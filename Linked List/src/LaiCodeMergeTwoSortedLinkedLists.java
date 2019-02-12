@@ -17,15 +17,11 @@ public class LaiCodeMergeTwoSortedLinkedLists {
                 }
                 cur = cur.next;
             }
-            while (one != null) {
+            if (one != null) {
                 cur.next = one;
-                one = one.next;
-                cur = cur.next;
             }
-            while (two != null) {
+            if (two != null) {
                 cur.next = two;
-                two = two.next;
-                cur = cur.next;
             }
             return dummyHead.next;
         }

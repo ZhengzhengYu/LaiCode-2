@@ -9,14 +9,14 @@ public class LaiCodeReOrderLinkedList {
             }
             //find the middle
             ListNode mid = findMid(head);
+
             //divide into two linked list
             ListNode one = head;
             ListNode two = mid.next;
             mid.next = null;
-            //reverse two
-            two = reverse(two);
+
             //merge
-            return merge(one, two);
+            return merge(one, reverse(two));
         }
 
         private ListNode findMid(ListNode head) {
@@ -52,7 +52,8 @@ public class LaiCodeReOrderLinkedList {
             }
             if (one != null) {
                 cur.next = one;
-            } else if (two != null) {
+            }
+            if (two != null) {
                 cur.next = two;
             }
             return dummyHead.next;
