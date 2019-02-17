@@ -2,54 +2,54 @@ import java.util.Stack;
 
 public class LaiCodeStackWithmin {
     //general solution
-//    public class Solution {
-//      Stack<Integer> s1;
-//      Stack<Integer> s2;
-//      public Solution() {
-//        // write your solution here
-//        s1 = new Stack<>();
-//        s2 = new Stack<>();
-//      }
+//   public class Solution {
+//  LinkedList<Integer> s1;
+//  LinkedList<Integer> s2;
+//  public Solution() {
+//    // write your solution here
+//    s1 = new LinkedList<>();
+//    s2 = new LinkedList<>();
+//  }
 //
-//      public int pop() {
-//        if (!s1.isEmpty()) {
-//          s2.pop();
-//          return s1.pop();
-//        }
-//        return -1;
-//      }
-//
-//      public void push(int element) {
-//        if (s1.isEmpty()) {
-//          s1.push(element);
-//          s2.push(element);
-//        } else {
-//          s1.push(element);
-//          if (element < s2.peek()) {
-//            s2.push(element);
-//          } else {
-//            s2.push(s2.peek());
-//          }
-//        }
-//      }
-//
-//      public int top() {
-//        if (!s1.isEmpty()) {
-//          return s1.peek();
-//        }
-//        return -1;
-//      }
-//
-//      public int min() {
-//        if (!s2.isEmpty()) {
-//          return s2.peek();
-//        }
-//        return -1;
-//      }
-//
+//  public int pop() {
+//    if (!s1.isEmpty()) {
+//      s2.pollFirst();
+//      return s1.pollFirst();
 //    }
+//    return -1;
+//  }
+//
+//  public void push(int element) {
+//    if (s1.isEmpty()) {
+//      s1.offerFirst(element);
+//      s2.offerFirst(element);
+//    } else {
+//      s1.offerFirst(element);
+//      if (element < s2.peekFirst()) {
+//        s2.offerFirst(element);
+//      } else {
+//        s2.offerFirst(s2.peekFirst());
+//      }
+//    }
+//  }
+//
+//  public int top() {
+//    if (!s1.isEmpty()) {
+//      return s1.peekFirst();
+//    }
+//    return -1;
+//  }
+//
+//  public int min() {
+//    if (!s2.isEmpty()) {
+//      return s2.peekFirst();
+//    }
+//    return -1;
+//  }
+//
+//}
 
-
+    
     //follow up: many duplicates
     public class Solution {
         public class Pair {
