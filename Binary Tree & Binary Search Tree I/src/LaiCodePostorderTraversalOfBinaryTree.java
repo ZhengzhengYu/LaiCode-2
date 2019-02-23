@@ -2,9 +2,10 @@ import java.util.*;
 
 public class LaiCodePostorderTraversalOfBinaryTree {
     //Method 1: post-order is the reverse of the pre-order with
-    //          traversing right subtree before traversing left subtree.
+    //          traversing right subtree before traversing left subtree.(offline)
     //Time: O(n)
     //Space: O(n)
+    //backward: need to store all treenode in memory before we get the whole post order traversal sequence
     //public class Solution {
     //  public List<Integer> postOrder(TreeNode root) {
     //    // Write your solution here
@@ -34,7 +35,7 @@ public class LaiCodePostorderTraversalOfBinaryTree {
     //}
 
 
-    //Method 2: check relation between current node and previous node
+    //Method 2 I: check relation between current node and previous node
     //          to determine which direction should go next.
     //Time: O(n)
     //Space: O(n)
@@ -45,39 +46,85 @@ public class LaiCodePostorderTraversalOfBinaryTree {
             if (root == null) {
                 return result;
             }
-            Deque<TreeNode> stack = new LinkedList<>();
-            stack.offerFirst(root);
-            //to record the previous node on the way of DFS so that
-            //we can determine the direction.
             TreeNode prev = null;
+            TreeNode cur = root;
+            Deque<TreeNode> stack = new LinkedList<>();
+            stack.offerFirst(cur);
             while (!stack.isEmpty()) {
-                TreeNode cur = stack.peekFirst();
-                //if we are going down, either left/right direction.
+                cur = stack.peekFirst();
                 if (prev == null || cur == prev.left || cur == prev.right) {
-                    //if we can still go down, try go left first.
+                    //go down
                     if (cur.left != null) {
                         stack.offerFirst(cur.left);
                     } else if (cur.right != null) {
                         stack.offerFirst(cur.right);
                     } else {
-                        //if we can not go either way, meaning cur is a leaf node.
-                        stack.pollFirst();
                         result.add(cur.key);
+                        stack.pollFirst();
                     }
-                } else if (prev == cur.right || prev == cur.left && cur.right == null) {
-                    //if we are going up from the right side or going up from left side
-                    //but we can not go right afterwards.
-                    stack.pollFirst();
-                    result.add(cur.key);
+                } else if (prev == cur.left) {
+                    //from left to right
+                    if (cur.right != null) {
+                        stack.offerFirst(cur.right);
+                    } else {
+                        result.add(cur.key);
+                        stack.pollFirst();
+                    }
                 } else {
-                    //otherwise, we are going up from left side and we can go down right side.
-                    stack.offerFirst(cur.right);
+                    //from right go up
+                    result.add(cur.key);
+                    stack.pollFirst();
                 }
                 prev = cur;
             }
             return result;
         }
     }
+
+    //Method 2 II: check relation between current node and previous node
+    //    //          to determine which direction should go next.
+    //    //Time: O(n)
+    //    //Space: O(n)
+    //    //public class Solution {
+    //    //  public List<Integer> postOrder(TreeNode root) {
+    //    //    // Write your solution here
+    //    //    List<Integer> result = new ArrayList<>();
+    //    //    if (root == null) {
+    //    //      return result;
+    //    //    }
+    //    //    Deque<TreeNode> stack = new LinkedList<>();
+    //    //    stack.offerFirst(root);
+    //    //    //to record the previous node on the way of DFS so that
+    //    //    //we can determine the direction.
+    //    //    TreeNode prev = null;
+    //    //    while (!stack.isEmpty()) {
+    //    //      TreeNode cur = stack.peekFirst();
+    //    //      //if we are going down, either left/right direction.
+    //    //      if (prev == null || cur == prev.left || cur == prev.right) {
+    //    //        //if we can still go down, try go left first.
+    //    //        if (cur.left != null) {
+    //    //          stack.offerFirst(cur.left);
+    //    //        } else if (cur.right != null) {
+    //    //          stack.offerFirst(cur.right);
+    //    //        } else {
+    //    //          //if we can not go either way, meaning cur is a leaf node.
+    //    //          stack.pollFirst();
+    //    //          result.add(cur.key);
+    //    //        }
+    //    //      } else if (prev == cur.right || prev == cur.left && cur.right == null) {
+    //    //        //if we are going up from the right side or going up from left side
+    //    //        //but we can not go right afterwards.
+    //    //        stack.pollFirst();
+    //    //        result.add(cur.key);
+    //    //      } else {
+    //    //        //otherwise, we are going up from left side and we can go down right side.
+    //    //        stack.offerFirst(cur.right);
+    //    //      }
+    //    //      prev = cur;
+    //    //    }
+    //    //    return result;
+    //    //  }
+    //    //}
 
 
     //Method 3: Recursive way

@@ -37,7 +37,40 @@ public class LaiCodeInorderTraversalOfBinaryTree {
         }
     }
 
-    //Method 2: Recursive way
+    //Method 2: Iterative way II
+    //Time: O(n)
+    //Space: O(n)
+    //public class Solution {
+    //  public List<Integer> inOrder(TreeNode root) {
+    //    // Write your solution here
+    //    List<Integer> result = new ArrayList<>();
+    //    if (root == null) {
+    //      return result;
+    //    }
+    //    Deque<TreeNode> stack = new LinkedList<>();
+    //    addAllLeft(root, stack);
+    //    while (!stack.isEmpty()) {
+    //      TreeNode cur = stack.pollFirst();
+    //      result.add(cur.key);
+    //      addAllLeft(cur.right, stack);
+    //    }
+    //    return result;
+    //  }
+    //
+    //  private void addAllLeft(TreeNode root, Deque<TreeNode> stack) {
+    //    if (root == null) {
+    //      return;
+    //    }
+    //    while (root != null) {
+    //      stack.offerFirst(root);
+    //      root = root.left;
+    //    }
+    //  }
+    //
+    //}
+
+
+    //Method 3: Recursive way
     //Time: O(n)
     //Space: O(n)
     //public class Solution {
