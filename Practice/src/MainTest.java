@@ -44,14 +44,17 @@ public class MainTest {
 
 
 
-        MinHeap heap = new MinHeap(10);
-        heap.offer(3);
-        heap.offer(1);
-        heap.offer(2);
-        System.out.println(heap.isEmpty());
-        System.out.println(heap.isFull());
-        System.out.println(heap.peek());
-        System.out.println(heap.poll());
-        System.out.println(heap.peek());
+//        MinHeap heap = new MinHeap(10);
+//        heap.offer(3);
+//        heap.offer(1);
+//        heap.offer(2);
+//        System.out.println(heap.isEmpty());
+//        System.out.println(heap.isFull());
+//        System.out.println(heap.peek());
+//        System.out.println(heap.poll());
+//        System.out.println(heap.peek());
+
+        ParenthesesI parentheses = new ParenthesesI();
+        System.out.println(parentheses.generate(3));
     }
 }
