@@ -1,4 +1,6 @@
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
 public class MainTest {
     public static void main(String[] args) {
@@ -54,7 +56,11 @@ public class MainTest {
 //        System.out.println(heap.poll());
 //        System.out.println(heap.peek());
 
-        ParenthesesI parentheses = new ParenthesesI();
-        System.out.println(parentheses.generate(3));
+//        ParenthesesI parentheses = new ParenthesesI();
+//        System.out.println(parentheses.generate(3));
+        Map<Coordinate, Integer> map = new HashMap<>();
+        map.put(new Coordinate(1, 2), 5);
+        map.put(new Coordinate(1, 2), 6);
+        System.out.println(map);
     }
 }
