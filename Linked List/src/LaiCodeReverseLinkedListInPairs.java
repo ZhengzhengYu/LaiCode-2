@@ -49,21 +49,22 @@ public class LaiCodeReverseLinkedListInPairs {
     //Time: O(n)
     //Space: O(1)
 //    public class Solution {
-//      public ListNode reverseInPairs(ListNode head) {
+//       public ListNode reverseInPairs(ListNode head) {
 //        // Write your solution here
-//        if (head == null) {
+//        if (head == null || head.next == null) {
 //          return head;
 //        }
 //        ListNode dummyHead = new ListNode(0);
-//        dummyHead.next = head;
-//        ListNode cur = dummyHead;
-//        while (cur.next != null && cur.next.next != null) {
-//          ListNode first = cur.next;
-//          ListNode second = cur.next.next;
-//          first.next = second.next;
-//          second.next = first;
-//          cur.next = second;
-//          cur = cur.next.next;
+//        ListNode prev = dummyHead;
+//        ListNode cur = head;
+//        while (cur != null && cur.next != null) {
+//          ListNode next = cur.next;
+//          ListNode nextnext = cur.next.next;
+//          prev.next = next;
+//          next.next = cur;
+//          cur.next = nextnext;
+//          prev = cur;
+//          cur = nextnext;
 //        }
 //        return dummyHead.next;
 //      }

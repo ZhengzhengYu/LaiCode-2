@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LaiCodeMergeTwoSortedLinkedLists.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LaiCodeMergeTwoSortedLinkedLists.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LaiCodeMergeTwoSortedLinkedLists.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -84,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LaiCodeReverseLinkedListInPairs.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LaiCodeReverseLinkedListInPairs.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LaiCodeReverseLinkedListInPairs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+            <state relative-caret-position="591">
+              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -96,7 +96,7 @@
       <file leaf-file-name="LaiCodeInsertInSortedLinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LaiCodeInsertInSortedLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
+            <state relative-caret-position="45">
               <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
@@ -124,9 +124,9 @@
         <option value="$PROJECT_DIR$/src/LaiCodeCheckIfLinkedListIsPalindrome.java" />
         <option value="$PROJECT_DIR$/src/LaiCodeCycleNodeInLinkedList.java" />
         <option value="$PROJECT_DIR$/src/LaiCodeRemoveLinkedListElements.java" />
-        <option value="$PROJECT_DIR$/src/LaiCodeReverseLinkedListInPairs.java" />
         <option value="$PROJECT_DIR$/src/LaiCodeInsertInSortedLinkedList.java" />
         <option value="$PROJECT_DIR$/src/LaiCodeMergeTwoSortedLinkedLists.java" />
+        <option value="$PROJECT_DIR$/src/LaiCodeReverseLinkedListInPairs.java" />
       </list>
     </option>
   </component>
@@ -166,8 +166,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,11 +251,12 @@
       <workItem from="1550081128984" duration="1226000" />
       <workItem from="1550104166001" duration="489000" />
       <workItem from="1550338290845" duration="354000" />
+      <workItem from="1552506329598" duration="256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5287000" />
+    <option name="totallyTimeSpent" value="5543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -274,7 +275,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28183118" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -638,16 +639,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LaiCodeReverseLinkedListInPairs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LaiCodeInsertInSortedLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
+        <state relative-caret-position="45">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
@@ -655,7 +649,14 @@
     <entry file="file://$PROJECT_DIR$/src/LaiCodeMergeTwoSortedLinkedLists.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LaiCodeReverseLinkedListInPairs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
         </state>
       </provider>
     </entry>
