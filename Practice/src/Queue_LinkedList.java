@@ -1,6 +1,6 @@
 public class Queue_LinkedList {
     //Linked List implements Queue
-//头删，尾加
+    //头删，尾加
     public class Queue {
         public ListNode head;
         public ListNode tail;
