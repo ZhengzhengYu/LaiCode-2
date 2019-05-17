@@ -29,8 +29,8 @@ public class LaiCodeReOrderArray {
             int leftmid = left + size / 4;
             int rightmid = left + size * 3 / 4;
             reverse(array, leftmid, mid - 1);
-            reverse(array, leftmid, rightmid - 1);
             reverse(array, mid, rightmid - 1);
+            reverse(array, leftmid, rightmid - 1);
             helper(array, left, left + 2 * (leftmid - left) - 1);
             helper(array, left + 2 * (leftmid - left), right);
         }
